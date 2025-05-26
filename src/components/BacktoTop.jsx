@@ -27,7 +27,7 @@ function BacktoTop() {
       {isVisible && (
         <motion.button
           onClick={handleBackToTop}
-          className="fixed bottom-6 right-6 bg-yellow-400 text-black p-3 rounded-full shadow-md hover:bg-gray-700 transition z-50"
+          className="fixed bottom-6 right-6 bg-yellow-400 text-black p-3 rounded-full shadow-md transition z-50"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
