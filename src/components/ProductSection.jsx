@@ -10,7 +10,7 @@ function ProductSection() {
   useEffect(() => {
     axios
       .get(
-        "http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick"
+        "https://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick"
       )
       .then((res) => setProducts(res.data.slice(0, 8)))
       .catch((err) => console.error(err));
