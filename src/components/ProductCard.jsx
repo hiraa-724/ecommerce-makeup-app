@@ -15,9 +15,24 @@ function ProductCard({ product }) {
   const wishlistItems = useSelector((state) => state.wishlist.items);
   const isInWishlist = wishlistItems.some((item) => item.id === product.id);
 
+  // const handleAddToCart = (e) => {
+  //   e.stopPropagation(); //  prevent navigation
+  //   dispatch(addToCart(product));
+  //   toast.success(`${product.name} added to cart!`);
+  // };
+
   const handleAddToCart = (e) => {
     e.stopPropagation(); //  prevent navigation
-    dispatch(addToCart(product));
+
+    const cartItem = {
+      id: product.id,
+      name: product.name,
+      price: parseFloat(product.price) || 0,
+      image_link: product.image_link,
+      quantity: 1,
+    };
+
+    dispatch(addToCart(cartItem));
     toast.success(`${product.name} added to cart!`);
   };
 

@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../features/cart/cartSlice";
 import ProductCard from "../components/ProductCard";
 import ProductSection from "../components/ProductSection";
+import { toast } from "react-toastify";
 
 function ProductDetail() {
   const dispatch = useDispatch();
@@ -36,6 +37,7 @@ function ProductDetail() {
       quantity,
     };
     dispatch(addToCart(cartItem));
+    toast.success(`${product.name} added to cart!`);
   };
 
   return (
@@ -81,7 +83,7 @@ function ProductDetail() {
             </div>
             <button
               onClick={handleAddToCart}
-              className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-6 py-2 rounded"
+              className="bg-yellow-400 hover:bg-black cursor-pointer transition duration-300 text-white font-semibold px-6 py-2 rounded"
             >
               Add to cart
             </button>
