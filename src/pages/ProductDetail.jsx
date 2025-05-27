@@ -83,7 +83,7 @@ function ProductDetail() {
             </div>
             <button
               onClick={handleAddToCart}
-              className="bg-yellow-400 hover:bg-black transition duration-300 text-white font-semibold px-6 py-2 rounded"
+              className="bg-yellow-400 hover:bg-black transition duration-300 cursor-pointer text-white font-semibold px-6 py-2 rounded"
             >
               Add to cart
             </button>
