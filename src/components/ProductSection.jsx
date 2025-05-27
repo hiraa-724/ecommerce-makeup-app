@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import ProductCard from "../components/ProductCard"; // 👈 import the reusable card
+import ProductCard from "../components/ProductCard";
 import BannerCard from "./BannerCard";
 
 function ProductSection() {
