@@ -65,7 +65,7 @@ function CartSidebar({ isOpen, onClose }) {
               </div>
               <button
                 onClick={() => dispatch(removeFromCart(item.id))}
-                className="text-red-500 text-sm"
+                className="text-red-500 text-sm hover:text-red-600 cursor-pointer"
               >
                 Remove
               </button>

@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../features/cart/cartSlice";
-import ProductCard from "../components/ProductCard";
 import ProductSection from "../components/ProductSection";
 import { toast } from "react-toastify";
 
