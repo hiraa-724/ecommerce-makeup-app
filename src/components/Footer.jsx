@@ -77,7 +77,6 @@ function Footer() {
   return (
     <footer className="bg-black text-white px-6 md:px-16 py-10">
       <div className="max-w-7xl mx-auto">
-        {/* Top part: Logo and footer sections */}
         <div className="flex flex-col md:flex-row justify-between gap-10">
           {/* Logo */}
           <div>
@@ -86,7 +85,6 @@ function Footer() {
             </h2>
           </div>
 
-          {/* Desktop view */}
           <div className="hidden md:grid grid-cols-4 gap-8 text-sm">
             {footerColumns.map((column, i) => (
               <div key={i} className="flex flex-col space-y-4">
