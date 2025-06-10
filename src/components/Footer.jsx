@@ -125,7 +125,6 @@ function Footer() {
             ))}
           </div>
 
-          {/* Mobile View */}
           <div className="md:hidden space-y-4 w-full text-sm">
             {footerColumns.slice(0, 3).map((column, i) =>
               column.sections.map((section, j) => (
@@ -164,7 +163,6 @@ function Footer() {
               ))
             )}
 
-            {/* Show only contact as open text for mobile */}
             <div>
               <h3 className="font-inter font-semibold text-white tracking-wide text-lg mb-2">
                 Contact
